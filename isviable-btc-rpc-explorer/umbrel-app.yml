@@ -1,0 +1,37 @@
+manifestVersion: 1
+id: isviable-btc-rpc-explorer
+name: BTC RPC Explorer
+version: "2.0.2"
+tagline: Simple, database-free blockchain explorer
+icon: https://svgur.com/i/mvA.svg
+category: bitcoin
+port: 3002
+description: >-
+  BTC RPC Explorer is a full-featured, self-hosted explorer for the
+  Bitcoin blockchain. With this explorer, you can explore not just the
+  blockchain database, but also explore the functional capabilities of your
+  Umbrel.
+
+
+  It comes with a network summary dashboard, detailed view of blocks, transactions, addresses, along with analysis tools for viewing stats on miner activity, mempool summary, with fee, size, and age breakdowns. You can also search by transaction ID, block hash/height, and addresses.
+
+
+  It's time to appreciate the "fullness" of your node.
+developer: Umbrel
+website: https://umbrel.com
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/horologger/btc-rpc-explorer
+support: https://github.com/horologger/btc-rpc-explorer/discussions
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies:
+  - bitcoin
+  - electrs
+path: ""
+defaultUsername: ""
+defaultPassword: ""
