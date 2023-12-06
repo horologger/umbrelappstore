@@ -12,7 +12,9 @@ services:
     image: horologger/btc-rpc-explorer:v2.0.2
     restart: on-failure
     stop_grace_period: 1m
+    # https://github.com/horologger/btc-rpc-explorer/blob/main/.env-sample
     environment:
+      PORT: 8080
       # Docker requirements
       BTCEXP_HOST: 0.0.0.0
       BTCEXP_PORT: 8080
