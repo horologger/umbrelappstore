@@ -20,8 +20,8 @@ dependencies:
 repo: https://github.com/horologger/timeintocrypto
 support: https://github.com/horologger/timeintocrypto/discussions
 gallery:
-  - https://github.com/horologger/umbrelappstore/blob/master/images/timeintocrypto/1.jpg
-  - https://github.com/horologger/umbrelappstore/blob/master/images/timeintocrypto/2.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/timeintocrypto/1.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/timeintocrypto/2.jpg
 path: ""
 deterministicPassword: true
 torOnly: false
