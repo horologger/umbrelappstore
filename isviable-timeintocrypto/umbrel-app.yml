@@ -1,8 +1,8 @@
 manifestVersion: 1
-id: timeintocrypto
+id: isviable-timeintocrypto
 category: bitcoin
 name: TimeIntoCrypto
-version: "1.0.0-build-2"
+version: "0.0.0"
 tagline: Minimal LNURL kiosk
 description: >-
   Use timeintocrypto to enable lightning payments from printed QR codes
