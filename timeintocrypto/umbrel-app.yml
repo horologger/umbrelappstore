@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: timeintocrypto
+category: bitcoin
+name: TimeIntoCrypto
+version: "1.0.0-build-2"
+tagline: Minimal LNURL kiosk
+description: >-
+  Use timeintocrypto to enable lightning payments from printed QR codes
+  in selfservice kiosks / cafés or other places where POS interaction is not
+  needed or an option.
+
+
+  Log into the dashboard, create a new LNURL, set currency and amount and download QR to print. Monitor latest invoices.
+developer: Jens Gertsen
+website: https://github.com/horologger/timeintocrypto
+dependencies:
+  - lightning
+repo: https://github.com/horologger/timeintocrypto
+support: https://github.com/horologger/timeintocrypto/discussions
+port: 21284
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+deterministicPassword: true
+torOnly: false
+submitter: Jens Gertsen
+submission: https://github.com/getumbrel/umbrel/pull/1312
