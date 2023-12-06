@@ -4,6 +4,7 @@ category: bitcoin
 name: TimeIntoCrypto
 version: "0.0.0"
 tagline: Minimal LNURL kiosk
+icon: https://getumbrel.github.io/umbrel-apps-gallery/sparkkiosk/icon.svg
 description: >-
   Use timeintocrypto to enable lightning payments from printed QR codes
   in selfservice kiosks / cafés or other places where POS interaction is not
