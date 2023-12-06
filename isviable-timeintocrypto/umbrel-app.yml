@@ -12,7 +12,7 @@ description: >-
 
 
   Log into the dashboard, create a new LNURL, set currency and amount and download QR to print. Monitor latest invoices.
-developer: Jens Gertsen
+developer: horologger
 website: https://github.com/horologger/timeintocrypto
 dependencies:
   - lightning
@@ -22,7 +22,6 @@ port: 21284
 gallery:
   - 1.jpg
   - 2.jpg
-  - 3.jpg
 path: ""
 deterministicPassword: true
 torOnly: false
