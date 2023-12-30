@@ -2,7 +2,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: alby-nostr-wallet-connect_server_1
+      APP_HOST: isviable-nostr-wallet-connect_server_1
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
   server:
@@ -17,7 +17,6 @@ services:
       LND_MACAROON_FILE: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
       DATABASE_URI: "/data/nostr-wallet-connect.db"
       COOKIE_SECRET: "742375a0f444d6de9c692aa83ac43c10"
-      #RELAY: "wss://relay.getalby.com/v1"
       RELAY: "wss://atl.purplerelay.com"
     restart: on-failure
     stop_grace_period: 1m
