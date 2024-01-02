@@ -481,3 +481,7 @@ PROXY_AUTH_BLACKLIST: "/admin/*"
 1. **I need help with something else?**
 
     You can open an [issue](https://github.com/getumbrel/umbrel-apps/issues) on GitHub or get in touch with [@mayankchhabra](https://t.me/mayankchhabra) or [@lukechilds](https://t.me/lukechilds) on Telegram.
+
+    https://hub.docker.com/r/cytopia/bind
+    https://www.isc.org/isclogos/
+    
