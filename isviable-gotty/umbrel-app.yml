@@ -7,7 +7,11 @@ category: bitcoin
 version: "1.5.0"
 port: 8080
 description: >-
-  GoTTY is a web based terminal for your Umbrel. It allows you to access your Umbrel terminal from anywhere in the world.
+  Add your app's description here.
+
+
+  You can also add newlines!
+
 developer: horologger
 website: https://github.com/horologger/timeintocrypto
 dependencies:
