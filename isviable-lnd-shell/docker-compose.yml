@@ -18,10 +18,9 @@ services:
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
     environment:
       # LND
-      LND_GRPC_ENDPOINT: $APP_LIGHTNING_NODE_IP
-      LND_GRPC_PORT: $APP_LIGHTNING_NODE_GRPC_PORT
-      LND_GRPC_CERT: "/lnd/tls.cert"
-      LND_GRPC_MACAROON: "/lnd/data/chain/bitcoin/$APP_BITCOIN_NETWORK/admin.macaroon"
+      LNCLI_RPCSERVER: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_RPC_PORT
+      LNCLI_TLSCERTPATH: "/lnd/tls.cert"
+      LNCLI_MACAROONPATH: "/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
 
       # App
       APP_HIDDEN_SERVICE: http://$APP_HIDDEN_SERVICE
