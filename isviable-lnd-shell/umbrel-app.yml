@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: isviable-lnd-shell
+name: LND Shell
+tagline: Minimal Terminal with LND tools
+icon: https://raw.githubusercontent.com/horologger/lndshell/main/terminal-red.svg
+category: bitcoin
+version: "0.0.0"
+port: 7682
+description: >-
+  A GoTTY terminal with LND tools pre-installed. 
+  Tools you load can be persisten in /data/bin
+  and will be available in the terminal.
+
+developer: horologger
+website: https://github.com/horologger/lndshell
+dependencies:
+  - lightning
+repo: https://github.com/horologger/lndshell
+support: https://github.com/horologger/lndshell/discussions
+gallery:
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/1.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/2.jpg
+path: ""
+deterministicPassword: true
+torOnly: false
+submitter: horologger
+submission: https://github.com/getumbrel/umbrel/pull/1312
