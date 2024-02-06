@@ -8,7 +8,7 @@ version: "0.0.0"
 port: 7682
 description: >-
   A GoTTY terminal with LND tools pre-installed. 
-  Tools you load can be persisten in /data/bin
+  Tools you load can be persisted in /data/bin
   and will be available in the terminal.
 
 developer: horologger

@@ -8,8 +8,8 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: horologger/lndshell:v0.0.0
-    user: 1000:1000
+    image: horologger/lndshell:v0.0.1
+    user: 0:0
     init: true
     restart: on-failure
     stop_grace_period: 1m

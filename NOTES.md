@@ -485,3 +485,17 @@ PROXY_AUTH_BLACKLIST: "/admin/*"
     https://hub.docker.com/r/cytopia/bind
     https://www.isc.org/isclogos/
     
+
+X. **Repo Update**
+  
+      If you need to refresh the repo, you can run the following command:
+      ```sh
+      ssh umbrelpi
+      sudo umbrel/scripts/repo update
+      sudo umbrel/scripts/app install isviable-lnd-shell
+      sudo umbrel/scripts/app uninstall isviable-lnd-shell
+      sudo umbrel/scripts/app reinstall isviable-lnd-shell
+      
+      ```
+  
+      This will pull the latest changes from the main Umbrel app repo and checkout the latest commit.
