@@ -18,7 +18,7 @@ services:
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
     environment:
       # LND
-      LNCLI_RPCSERVER: "$APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_RPC_PORT"
+      LNCLI_RPCSERVER: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
       LNCLI_TLSCERTPATH: "/lnd/tls.cert"
       LNCLI_MACAROONPATH: "/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
 
