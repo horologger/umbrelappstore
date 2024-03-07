@@ -1,10 +1,10 @@
 manifestVersion: 1
 id: isviable-timeintocrypto
 name: TimeIntoCrypto
-tagline: Minimal LNURL kiosk
-icon: https://getumbrel.github.io/umbrel-apps-gallery/sparkkiosk/icon.svg
+tagline: Your time into crypto
+icon: https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-timeintocrypto/images/tic_1.png  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/isviable-timeintocrypto/images/icon.png
 category: bitcoin
-version: "0.0.0"
+version: "0.0.1"
 port: 21284
 description: >-
   Use timeintocrypto to enable lightning payments from printed QR codes
@@ -17,11 +17,10 @@ developer: horologger
 website: https://github.com/horologger/timeintocrypto
 dependencies:
   - lightning
-repo: https://github.com/horologger/timeintocrypto
-support: https://github.com/horologger/timeintocrypto/discussions
+repo: https://github.com/horologger/time-into-crypto
+support: https://github.com/horologger/time-into-crypto/issues
 gallery:
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/timeintocrypto/1.jpg
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/timeintocrypto/2.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-timeintocrypto/images/tic_1.png  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/isviable-timeintocrypto/images/tic_1.png
 path: ""
 deterministicPassword: true
 torOnly: false
