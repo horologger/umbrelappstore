@@ -491,10 +491,16 @@ X. **Repo Update**
       If you need to refresh the repo, you can run the following command:
       ```sh
       ssh umbrelpi
+
       sudo umbrel/scripts/repo update
+
       sudo umbrel/scripts/app install isviable-lnd-shell
       sudo umbrel/scripts/app uninstall isviable-lnd-shell
       sudo umbrel/scripts/app reinstall isviable-lnd-shell
+      
+      sudo umbrel/scripts/app install isviable-timeintocrypto
+      sudo umbrel/scripts/app uninstall isviable-timeintocrypto
+      sudo umbrel/scripts/app reinstall isviable-timeintocrypto
       
       ```
   
