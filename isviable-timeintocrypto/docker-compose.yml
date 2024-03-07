@@ -9,7 +9,7 @@ services:
 
   web:
     image: horologger/time-into-crypto:v0.0.1
-    user: 1000:1000
+    user: 0:0
     init: true
     restart: on-failure
     stop_grace_period: 1m
