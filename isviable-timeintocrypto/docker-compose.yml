@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: horologger/time-into-crypto:v0.0.1
+    image: horologger/time-into-crypto:v0.0.2
     user: 1000:1000
     init: true
     restart: on-failure
