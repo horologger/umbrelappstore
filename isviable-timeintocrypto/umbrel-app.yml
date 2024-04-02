@@ -2,7 +2,7 @@ manifestVersion: 1
 id: isviable-timeintocrypto
 name: TimeIntoCrypto
 tagline: Your time into crypto
-icon: https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-timeintocrypto/images/icon.png
+icon: https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-timeintocrypto/images/icon.svg
 category: bitcoin
 version: "0.0.2"
 port: 21284
@@ -20,7 +20,7 @@ dependencies:
 repo: https://github.com/horologger/time-into-crypto
 support: https://github.com/horologger/time-into-crypto/issues
 gallery:
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-timeintocrypto/images/icon.png
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-timeintocrypto/images/tic_1.png
 path: ""
 deterministicPassword: true
 torOnly: false
