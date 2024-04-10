@@ -493,6 +493,7 @@ X. **Repo Update**
       ssh umbrelpi
 
       sudo umbrel/scripts/repo update
+      sudo umbrel/scripts/repo update https://github.com/horologger/umbrelappstore.git
 
       sudo umbrel/scripts/app install isviable-lnd-shell
       sudo umbrel/scripts/app uninstall isviable-lnd-shell
