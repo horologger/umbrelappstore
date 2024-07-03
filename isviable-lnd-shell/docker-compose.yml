@@ -23,6 +23,6 @@ services:
 
       # App
       APP_HIDDEN_SERVICE: http://$APP_HIDDEN_SERVICE
-      APP_PASSWORD: $APP_PASSWORD
+      APP_PASSWORD: "$APP_PASSWORD"
       APP_DOMAIN: $APP_DOMAIN
       PORT: 8080

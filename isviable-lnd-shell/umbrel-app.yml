@@ -4,7 +4,7 @@ name: LND Shell
 tagline: Minimal Terminal with LND tools
 icon: https://raw.githubusercontent.com/horologger/lndshell/main/terminal-red.svg
 category: bitcoin
-version: "0.0.3"
+version: "0.0.4"
 port: 7682
 description: >-
   A GoTTY terminal with LND tools pre-installed. 
@@ -23,6 +23,7 @@ gallery:
   - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/2.jpg
 path: ""
 deterministicPassword: true
+defaultUsername: admin
 torOnly: false
 submitter: horologger
 submission: https://github.com/getumbrel/umbrel/pull/1312
