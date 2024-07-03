@@ -10,13 +10,14 @@ description: >-
   A GoTTY terminal with LND tools pre-installed. 
   Tools you load can be persisted in /data/bin
   and will be available in the terminal.
+  Login with user: admin and password: <from app-store>
 
 developer: horologger
 website: https://github.com/horologger/lndshell
 dependencies:
   - lightning
 repo: https://github.com/horologger/lndshell
-support: https://github.com/horologger/lndshell/discussions
+support: https://github.com/horologger/lndshell/issues
 gallery:
   - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/1.jpg
   - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/2.jpg
