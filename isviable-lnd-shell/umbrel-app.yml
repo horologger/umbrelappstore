@@ -4,7 +4,7 @@ name: LND Shell
 tagline: Minimal Terminal with LND tools
 icon: https://raw.githubusercontent.com/horologger/lndshell/main/terminal-red.svg
 category: bitcoin
-version: "0.0.2"
+version: "0.0.3"
 port: 7682
 description: >-
   A GoTTY terminal with LND tools pre-installed. 

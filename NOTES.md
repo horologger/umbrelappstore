@@ -503,6 +503,10 @@ X. **Repo Update**
       sudo umbrel/scripts/app uninstall isviable-timeintocrypto
       sudo umbrel/scripts/app reinstall isviable-timeintocrypto
       
+      sudo umbrel/scripts/app ls-installed
+      umbrel@umbrel:~$ 
+      umbreld client apps.install.mutate --appId isviable-lnd-shell
+
       ```
   
       This will pull the latest changes from the main Umbrel app repo and checkout the latest commit.
