@@ -4,13 +4,19 @@ name: LND Shell
 tagline: Minimal Terminal with LND tools
 icon: https://raw.githubusercontent.com/horologger/lndshell/main/terminal-red.svg
 category: bitcoin
-version: "0.0.4"
+version: "0.0.5"
 port: 7682
 description: >-
   A GoTTY terminal with LND tools pre-installed. 
   Tools you load can be persisted in /data/bin
   and will be available in the terminal.
-  Login with user: admin and password: <from app-store>
+  Login with user: admin
+  Find the password by logging into your Umbrel.
+  Go to the Settings page.
+  Click the Troubleshoot button.
+  Select the app "LND Shell".
+  Look for the value of APP_PASSWORD.
+  This is your admin user's password.
 
 developer: horologger
 website: https://github.com/horologger/lndshell
