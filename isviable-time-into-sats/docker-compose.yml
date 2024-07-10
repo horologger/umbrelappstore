@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: isviable-time-into-sats_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: horologger/time-into-sats:v0.0.5
+    user: 1000:1000
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
+    environment:
+      # LND
+      LNCLI_RPCSERVER: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
+      LNCLI_TLSCERTPATH: "/lnd/tls.cert"
+      LNCLI_MACAROONPATH: "/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
+
+      # App
+      APP_HIDDEN_SERVICE: http://$APP_HIDDEN_SERVICE
+      APP_PASSWORD: $APP_PASSWORD
+      APP_DOMAIN: $APP_DOMAIN
+      PORT: 8080
