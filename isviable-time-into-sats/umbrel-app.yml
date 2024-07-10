@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: isviable-time-into-sats
-name: TimeIntoSats
+name: Time Into Sats
 tagline: Your time into satoshis
 icon: https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-time-into-sats/images/icon.png
 category: bitcoin
