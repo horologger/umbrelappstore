@@ -4,7 +4,7 @@ name: Time Into Sats
 tagline: Your time into satoshis
 icon: https://raw.githubusercontent.com/horologger/umbrelappstore/master/isviable-time-into-sats/images/icon.png
 category: bitcoin
-version: "0.0.5"
+version: "0.0.6"
 port: 21284
 description: >-
   Use time-into-sats to get paid for your consulting time.
