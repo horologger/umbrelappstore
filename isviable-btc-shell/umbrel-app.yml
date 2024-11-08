@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: isviable-btc-shell
+name: BTC Shell
+tagline: Minimal Terminal with BTC tools
+icon: https://raw.githubusercontent.com/horologger/btcshell/main/terminal-red.svg
+category: bitcoin
+version: "0.0.5"
+port: 7682
+description: >-
+  A GoTTY terminal with BTC tools pre-installed. 
+  Tools you load can be persisted in /data/bin
+  and will be available in the terminal.
+  Login with user: admin
+  Find the password by logging into your Umbrel.
+  Go to the Settings page.
+  Click the Troubleshoot button.
+  Select the app "BTC Shell".
+  Look for the value of APP_PASSWORD.
+  This is your admin user's password.
+
+developer: horologger
+website: https://github.com/horologger/btcshell
+dependencies:
+  - lightning
+repo: https://github.com/horologger/btcshell
+support: https://github.com/horologger/btcshell/issues
+gallery:
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/btcshell/1.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/btcshell/2.jpg
+path: ""
+deterministicPassword: true
+defaultUsername: admin
+torOnly: false
+submitter: horologger
+submission: https://github.com/getumbrel/umbrel/pull/1312
