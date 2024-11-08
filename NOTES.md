@@ -508,6 +508,8 @@ X. **Repo Update**
       umbreld client apps.install.mutate --appId isviable-lnd-shell
       umbreld client apps.install.mutate --appId isviable-time-into-sats
 
+      umbreld client apps.install.mutate --appId isviable-btc-shell
+      
 
       ```
   

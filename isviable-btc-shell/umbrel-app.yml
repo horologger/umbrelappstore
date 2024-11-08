@@ -21,7 +21,7 @@ description: >-
 developer: horologger
 website: https://github.com/horologger/btcshell
 dependencies:
-  - lightning
+  - bitcoin
 repo: https://github.com/horologger/btcshell
 support: https://github.com/horologger/btcshell/issues
 gallery:
