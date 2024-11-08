@@ -13,13 +13,14 @@ services:
     restart: on-failure
     stop_grace_period: 1m
     volumes:
-      - ${APP_DATA_DIR}/data:/data
-      - ${APP_LIGHTNING_NODE_DATA_DIR}:/btc:ro
+      - "${APP_DATA_DIR}/data:/data"
+      - "${APP_BITCOIN_DATA_DIR}:/data/.bitcoin:ro"
     environment:
       # BTC
-      LNCLI_RPCSERVER: $APP_LIGHTNING_NODE_IP:$APP_LIGHTNING_NODE_GRPC_PORT
-      LNCLI_TLSCERTPATH: "/lnd/tls.cert"
-      LNCLI_MACAROONPATH: "/lnd/data/chain/bitcoin/mainnet/admin.macaroon"
+      BTC_RPC_HOST: "${APP_BITCOIN_NODE_IP}"
+      BTC_RPC_PORT: "${APP_BITCOIN_RPC_PORT}"
+      BTC_RPC_USER: "${APP_BITCOIN_RPC_USER}"
+      BTC_RPC_PASSWORD: "${APP_BITCOIN_RPC_PASS}"
 
       # App
       APP_HIDDEN_SERVICE: http://$APP_HIDDEN_SERVICE
