@@ -2,10 +2,10 @@ manifestVersion: 1
 id: isviable-btc-shell
 name: BTC Shell
 tagline: Minimal Terminal with BTC tools
-icon: https://raw.githubusercontent.com/horologger/btcshell/main/terminal-red.svg
+icon: https://raw.githubusercontent.com/horologger/btcshell/main/terminal-orange.svg
 category: bitcoin
-version: "0.0.5"
-port: 7682
+version: "0.0.2"
+port: 7683
 description: >-
   A GoTTY terminal with BTC tools pre-installed. 
   Tools you load can be persisted in /data/bin
@@ -25,8 +25,8 @@ dependencies:
 repo: https://github.com/horologger/btcshell
 support: https://github.com/horologger/btcshell/issues
 gallery:
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/btcshell/1.jpg
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/btcshell/2.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/1.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/2.jpg
 path: ""
 deterministicPassword: true
 defaultUsername: admin
