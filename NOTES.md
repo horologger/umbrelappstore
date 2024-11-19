@@ -510,6 +510,9 @@ X. **Repo Update**
 
       umbreld client apps.install.mutate --appId isviable-btc-shell
       
+      sudo umbrel/scripts/repo update https://github.com/horologger/umbrelappstore.git
+      umbreld client apps.install.mutate --appId isviable-spaces
+      umbreld client apps.uninstall.mutate --appId isviable-spaces
 
       ```
   
