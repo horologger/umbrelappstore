@@ -11,12 +11,15 @@ description: >-
   Tools you load can be persisted in /data/bin
   and will be available in the terminal.
   Login with user: admin
-  Find the password by logging into your Umbrel.
+  Find the password by right-clicking on the Spaces icon
+  and click "Show default credentials" or by logging into your Umbrel.
   Go to the Settings page.
   Click the Troubleshoot button.
   Select the app "Spaces".
   Look for the value of APP_PASSWORD.
   This is your admin user's password.
+
+  https://docs.spacesprotocol.org/getting-started/quickstart#create-a-wallet
 
 developer: horologger
 website: https://github.com/horologger/spaces
