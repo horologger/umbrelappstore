@@ -29,3 +29,11 @@ services:
       APP_DOMAIN: $APP_DOMAIN
       GOTTY_PORT: 8080
       PORT: 8080
+      # These are set in the Spaces Docker Container
+      # SPACED_DATA_DIR: '/data'
+      # SPACED_CHAIN: 'mainnet'
+      # SPACED_BITCOIN_RPC_URL: 'http://'$BTC_RPC_HOST':'$BTC_RPC_PORT
+      # SPACED_RPC_BIND: '127.0.0.1'
+      # SPACED_RPC_PORT: '7225'
+      # SPACED_RPC_URL: 'http://'$SPACED_RPC_BIND':'$SPACED_RPC_PORT
+      # SPACED_BLOCK_INDEX: 'true'
