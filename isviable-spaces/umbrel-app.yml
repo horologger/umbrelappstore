@@ -28,8 +28,7 @@ dependencies:
 repo: https://github.com/horologger/spaces
 support: https://github.com/horologger/spaces/issues
 gallery:
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/1.jpg
-  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/lndshell/2.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/spaces/1.png
 path: ""
 deterministicPassword: true
 defaultUsername: admin
