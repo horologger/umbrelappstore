@@ -19,7 +19,7 @@ description: >-
   Look for the value of APP_PASSWORD.
   This is your admin user's password.
 
-  https://docs.spacesprotocol.org/getting-started/quickstart#create-a-wallet
+  [Get started by creating a wallet](https://docs.spacesprotocol.org/getting-started/quickstart#create-a-wallet)
 
 developer: horologger
 website: https://github.com/horologger/spaces
