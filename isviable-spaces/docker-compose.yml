@@ -15,6 +15,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_BITCOIN_DATA_DIR}:/data/.bitcoin:ro
+    ports:
+      - "${APP_SPACES_FABRIC_PORT}:${APP_SPACES_FABRIC_PORT}"
     environment:
       # BTC
       BTC_RPC_HOST: "${APP_BITCOIN_NODE_IP}"

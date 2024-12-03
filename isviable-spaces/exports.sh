@@ -1,0 +1,1 @@
+export APP_SPACES_FABRIC_PORT="7225"

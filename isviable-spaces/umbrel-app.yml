@@ -2,7 +2,7 @@ manifestVersion: 1
 id: isviable-spaces
 name: Spaces
 tagline: Minimal Terminal with Spaces Protocol tools
-icon:
+icon: https://raw.githubusercontent.com/horologger/spaces/main/spaces-logo.png
 category: bitcoin
 version: "0.0.4"
 port: 7688
