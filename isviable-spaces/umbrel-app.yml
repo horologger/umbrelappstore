@@ -25,7 +25,8 @@ dependencies:
   - bitcoin
 repo: https://github.com/horologger/spaces
 support: https://docs.spacesprotocol.org/getting-started/quickstart
-gallery: 
+gallery:
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/spaces/1.png
 path: ""
 deterministicPassword: true
 defaultUsername: admin
