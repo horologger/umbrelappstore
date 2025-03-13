@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: horologger/spaces:v0.0.7@sha256:376eb34e0ebc5bd95533e8ee28aa2fc01cff9675dbcd2bfde32f175739f45458
+    image: horologger/spaces:v0.0.7@sha256:9232568fd25d4c204a4d78ffa75b2527f5d919e670246e986071424a89f7a861
     init: true
     restart: on-failure
     stop_grace_period: 1m
