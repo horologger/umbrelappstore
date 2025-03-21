@@ -4,7 +4,7 @@ name: BTC Shell
 tagline: Minimal Terminal with BTC tools
 icon: https://raw.githubusercontent.com/horologger/btcshell/main/terminal-orange.svg
 category: bitcoin
-version: "0.0.7"
+version: "0.0.6"
 port: 7683
 description: >-
   A GoTTY terminal with BTC tools pre-installed. 

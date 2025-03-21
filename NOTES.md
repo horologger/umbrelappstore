@@ -511,9 +511,19 @@ X. **Repo Update**
       umbreld client apps.install.mutate --appId isviable-btc-shell
       
       sudo umbrel/scripts/repo update https://github.com/horologger/umbrelappstore.git
+
+      umbreld client apps.install.mutate --appId isviable-btc-shell
+      umbreld client apps.uninstall.mutate --appId isviable-btc-shell
+
       umbreld client apps.install.mutate --appId isviable-spaces
       umbreld client apps.uninstall.mutate --appId isviable-spaces
 
       ```
   
       This will pull the latest changes from the main Umbrel app repo and checkout the latest commit.
+
+      # The name is the last field
+      sudo docker ps | grep bitcoind
+
+      # Watch logs
+      sudo docker logs -f bitcoin_bitcoind_1
