@@ -527,3 +527,4 @@ X. **Repo Update**
 
       # Watch logs
       sudo docker logs -f bitcoin_bitcoind_1
+      sudo docker logs -f isviable-btc-shell_web_1
