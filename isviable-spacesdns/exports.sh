@@ -1,0 +1,1 @@
+export APP_SPACESDNS_PORT="53"
