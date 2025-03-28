@@ -2,7 +2,7 @@ manifestVersion: 1
 id: isviable-pkdns
 name: PKDNS
 tagline: Minimal Terminal with SpacesDNS Server + CLI
-icon: https://raw.githubusercontent.com/horologger/spaces/main/pklogo.png
+icon: https://raw.githubusercontent.com/horologger/pkdns/master/pkdns.png
 category: bitcoin
 version: "0.7.0"
 port: 7689
