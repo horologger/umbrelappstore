@@ -1,0 +1,1 @@
+export APP_PKDNS_PORT="53"

@@ -1,0 +1,46 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: isviable-pkdns_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: horologger/pkdns:v0.7.0@sha256:582ba42594e0ce866fdf64c97b1f6871e5bd09baa27ee6fc34b5d16dbee8d99b
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_BITCOIN_DATA_DIR}:/data/.bitcoin:ro
+    ports:
+      - "${APP_PKDNS_PORT}:${APP_PKDNS_PORT}/udp"
+      - "${APP_PKDNS_PORT}:${APP_PKDNS_PORT}/tcp"
+    environment:
+      # BTC
+      BTC_RPC_HOST: "${APP_BITCOIN_NODE_IP}"
+      BTC_RPC_PORT: "${APP_BITCOIN_RPC_PORT}"
+      BTC_RPC_USER: "${APP_BITCOIN_RPC_USER}"
+      BTC_RPC_PASSWORD: "${APP_BITCOIN_RPC_PASS}"
+      BITCOIN_RPCCONNECT: "${APP_BITCOIN_NODE_IP}"
+      BITCOIN_RPCPORT: "${APP_BITCOIN_RPC_PORT}"
+      BITCOIN_RPCUSER: "${APP_BITCOIN_RPC_USER}"
+      BITCOIN_RPCPASSWORD: "${APP_BITCOIN_RPC_PASS}"
+
+      # App
+      APP_HIDDEN_SERVICE: http://$APP_HIDDEN_SERVICE
+      APP_USER: "admin"
+      APP_PASSWORD: "$APP_PASSWORD"
+      APP_DOMAIN: $APP_DOMAIN
+      GOTTY_PORT: 8080
+      PORT: 8080
+      # These are set in the spacesdns Docker Container
+      # SPACED_DATA_DIR: '/data'
+      # SPACED_CHAIN: 'mainnet'
+      # SPACED_BITCOIN_RPC_URL: 'http://'$BTC_RPC_HOST':'$BTC_RPC_PORT
+      # SPACED_RPC_BIND: '127.0.0.1'
+      # SPACED_RPC_PORT: '7225'
+      # SPACED_RPC_URL: 'http://'$SPACED_RPC_BIND':'$SPACED_RPC_PORT
+      # SPACED_BLOCK_INDEX: 'true'
