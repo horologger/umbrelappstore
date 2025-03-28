@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: isviable-spaces-dns
+name: Spaces DNS
+tagline: Minimal Terminal with SpacesDNS Server + CLI
+icon: https://raw.githubusercontent.com/horologger/spaces/main/spaces-logo.png
+category: bitcoin
+version: "0.7.0"
+port: 7689
+description: >-
+  A GoTTY terminal with SpacesDNS Server + CLI pre-installed. 
+  Tools you load can be persisted in /data/bin
+  and will be available in the terminal.
+  Login with user: admin
+  Find the password by right-clicking on the SpacesDNS icon
+  and click "Show default credentials" or by logging into your Umbrel.
+  Go to the Settings page.
+  Click the Troubleshoot button.
+  Select the app "SpacesDNS".
+  Look for the value of APP_PASSWORD.
+  This is your admin user's password.
+
+developer: horologger
+website: https://docs.spacesprotocol.org/getting-started/quickstart
+dependencies:
+  - bitcoin
+repo: https://github.com/horologger/spacesdns
+support: https://docs.spacesprotocol.org/getting-started/quickstart
+gallery:
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/spaces/1.png
+path: ""
+deterministicPassword: true
+defaultUsername: admin
+torOnly: false
+submitter: horologger
+submission: https://github.com/getumbrel/umbrel-apps/pull/1840
