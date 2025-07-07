@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: isviable-tap-shell
+name: TAP Shell
+tagline: Minimal Terminal with TAPROOT tools
+icon: https://raw.githubusercontent.com/horologger/tapshell/main/terminal-gray.svg
+category: bitcoin
+version: "0.0.1"
+port: 7684
+description: >-
+  A GoTTY terminal with TAPROOT tools pre-installed. 
+  Tools you load can be persisted in /data/bin
+  and will be available in the terminal.
+  Login with user: admin
+  Find the password by logging into your Umbrel.
+  Go to the Settings page.
+  Click the Troubleshoot button.
+  Select the app "TAP Shell".
+  Look for the value of APP_PASSWORD.
+  This is your admin user's password.
+
+developer: horologger
+website: https://github.com/horologger/tapshell
+dependencies:
+  - bitcoin
+repo: https://github.com/horologger/tapshell
+support: https://github.com/horologger/tapshell/issues
+gallery:
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/tapshell/1.jpg
+  - https://raw.githubusercontent.com/horologger/umbrelappstore/master/images/tapshell/2.jpg
+path: ""
+deterministicPassword: true
+defaultUsername: admin
+torOnly: false
+submitter: horologger
+submission: https://github.com/getumbrel/umbrel/pull/1312

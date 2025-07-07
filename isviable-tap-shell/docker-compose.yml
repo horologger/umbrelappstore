@@ -1,0 +1,43 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: isviable-tap-shell_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: horologger/tapshell:v0.0.1
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_BITCOIN_DATA_DIR}:/data/.bitcoin:ro
+    ports:
+      - "${APP_TAP_SHELL_NODE_A_LITD_HTTP_LISTEN}:${APP_TAP_SHELL_NODE_A_LITD_HTTP_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_B_LITD_HTTP_LISTEN}:${APP_TAP_SHELL_NODE_B_LITD_HTTP_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_A_LND_REST_LISTEN}:${APP_TAP_SHELL_NODE_A_LND_REST_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_B_LND_REST_LISTEN}:${APP_TAP_SHELL_NODE_B_LND_REST_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_A_LITD_HTTPS_LISTEN}:${APP_TAP_SHELL_NODE_A_LITD_HTTPS_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_B_LITD_HTTPS_LISTEN}:${APP_TAP_SHELL_NODE_B_LITD_HTTPS_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_PRICE_ORACLE_PORT}:${APP_TAP_SHELL_PRICE_ORACLE_PORT}/tcp"
+      - "${APP_TAP_SHELL_NODE_A_LND_LISTEN}:${APP_TAP_SHELL_NODE_A_LND_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_B_LND_LISTEN}:${APP_TAP_SHELL_NODE_B_LND_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_A_LND_RPC_LISTEN}:${APP_TAP_SHELL_NODE_A_LND_RPC_LISTEN}/tcp"
+      - "${APP_TAP_SHELL_NODE_B_LND_RPC_LISTEN}:${APP_TAP_SHELL_NODE_B_LND_RPC_LISTEN}/tcp"
+    environment:
+      # BTC
+      BITCOIN_RPCCONNECT: "${APP_BITCOIN_NODE_IP}"
+      BITCOIN_RPCPORT: "${APP_BITCOIN_RPC_PORT}"
+      BITCOIN_RPCUSER: "${APP_BITCOIN_RPC_USER}"
+      BITCOIN_RPCPASSWORD: "${APP_BITCOIN_RPC_PASS}"
+
+      # App
+      APP_HIDDEN_SERVICE: http://$APP_HIDDEN_SERVICE
+      APP_USER: "admin"
+      APP_PASSWORD: "$APP_PASSWORD"
+      APP_DOMAIN: $APP_DOMAIN
+      GOTTY_PORT: 8080
+      PORT: 8080

@@ -518,6 +518,9 @@ X. **Repo Update**
       umbreld client apps.install.mutate --appId isviable-spaces
       umbreld client apps.uninstall.mutate --appId isviable-spaces
 
+      umbreld client apps.install.mutate --appId isviable-spacesdns
+      umbreld client apps.uninstall.mutate --appId isviable-spacesdns
+
       ```
   
       This will pull the latest changes from the main Umbrel app repo and checkout the latest commit.
@@ -528,3 +531,19 @@ X. **Repo Update**
       # Watch logs
       sudo docker logs -f bitcoin_bitcoind_1
       sudo docker logs -f isviable-btc-shell_web_1
+
+
+      # Lightning-Terminal
+      sudo docker exec -it lightning-terminal_web_1 /bin/bash
+
+      lncli --tlscertpath=/lnd/tls.cert --macaroonpath=/lnd/data/chain/bitcoin/mainnet/admin.macaroon --rpcserver=10.21.21.9:10009 getinfo
+
+lncli --tlscertpath=/lnd/tls.cert --macaroonpath=/lnd/data/chain/bitcoin/mainnet/admin.macaroon --rpcserver=10.21.21.9:10009 getinfo | grep sync
+
+alias lncli='lncli --tlscertpath=/lnd/tls.cert --macaroonpath=/lnd/data/chain/bitcoin/mainnet/admin.macaroon --rpcserver=10.21.21.9:10009'
+
+lncli getinfo | grep sync
+
+alias lncli='tapcli --tlscertpath=/lnd/tls.cert --macaroonpath=/data/.tapd/data/mainnet/admin.macaroon --rpcserver=10.21.21.9:10009'
+
+
