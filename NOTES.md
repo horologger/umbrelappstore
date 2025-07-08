@@ -499,6 +499,10 @@ X. **Repo Update**
       sudo umbrel/scripts/app uninstall isviable-lnd-shell
       sudo umbrel/scripts/app reinstall isviable-lnd-shell
       
+      sudo umbrel/scripts/app install isviable-tap-shell
+      sudo umbrel/scripts/app uninstall isviable-tap-shell
+      sudo umbrel/scripts/app reinstall isviable-tap-shell
+      
       sudo umbrel/scripts/app install isviable-timeintocrypto
       sudo umbrel/scripts/app uninstall isviable-timeintocrypto
       sudo umbrel/scripts/app reinstall isviable-timeintocrypto
@@ -506,6 +510,7 @@ X. **Repo Update**
       sudo umbrel/scripts/app ls-installed
       umbrel@umbrel:~$ 
       umbreld client apps.install.mutate --appId isviable-lnd-shell
+      umbreld client apps.install.mutate --appId isviable-tap-shell
       umbreld client apps.install.mutate --appId isviable-time-into-sats
 
       umbreld client apps.install.mutate --appId isviable-btc-shell
@@ -514,6 +519,9 @@ X. **Repo Update**
 
       umbreld client apps.install.mutate --appId isviable-btc-shell
       umbreld client apps.uninstall.mutate --appId isviable-btc-shell
+
+      umbreld client apps.install.mutate --appId isviable-tap-shell
+      umbreld client apps.uninstall.mutate --appId isviable-tap-shell
 
       umbreld client apps.install.mutate --appId isviable-spaces
       umbreld client apps.uninstall.mutate --appId isviable-spaces
